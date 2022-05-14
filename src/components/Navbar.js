@@ -5,10 +5,13 @@ import AuthContext from "../store/auth-context";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  const authCtx = useContext(AuthContext);
+  const authCtxt = useContext(AuthContext);
 
-  const isLoggedIn = authCtx.isLoggedIn;
+  const isLoggedIn = authCtxt.isLoggedIn;
 
+  const logoutHandler = () => {
+    authCtxt.logout();
+  };
   return (
     <header className={styles.header}>
       <Link to="/">
@@ -28,7 +31,7 @@ const Navbar = () => {
           )}
           {isLoggedIn && (
             <li>
-              <button>Logout</button>
+              <button onClick={logoutHandler}>Logout</button>
             </li>
           )}
         </ul>

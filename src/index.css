@@ -173,7 +173,7 @@ ul {
   background: var(--primary-200);
 }
 .btn-hipster:hover {
-  color: var(--primary-200);
+  color: var(--primary-900);
   background: var(--primary-700);
 }
 .btn-block {
