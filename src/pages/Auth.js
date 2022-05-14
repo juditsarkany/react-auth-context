@@ -62,7 +62,7 @@ const AuthForm = () => {
       })
       .then((data) => {
         authCtxt.login(data.idToken);
-        navigate("/profile");
+        navigate("/");
       })
       .catch((err) => {
         toast.error(err.message);

@@ -1,27 +1,30 @@
-main.error {
+/* main.error {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.error img {
+.error_img {
   width: 90vw;
   max-width: 600px;
   display: block;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin: 0 auto 2rem auto;
 }
 
 .error h3 {
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 .error p {
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: var(--grey-500);
 }
-.error a {
+.error p a {
   color: var(--primary-500);
-  text-decoration: underline;
   text-transform: capitalize;
+  text-decoration: underline;
+  text-align: center;
 }
