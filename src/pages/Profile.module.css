@@ -35,3 +35,7 @@
 .action {
   margin-top: 1.5rem;
 }
+
+.img {
+  max-width: 300px;
+}

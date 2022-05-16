@@ -2,6 +2,7 @@ import { useRef, useContext } from "react";
 import styles from "./Profile.module.css";
 import Navbar from "../components/Navbar";
 import AuthContext from "../store/auth-context";
+import img from "../assets/images/book-reading.svg";
 
 const Profile = () => {
   const newPasswordInputRef = useRef();
@@ -45,6 +46,7 @@ const Profile = () => {
             <button className="btn btn-block">Change Password</button>
           </div>
         </form>
+        <img src={img} alt="person reading a book" className={styles.img} />
       </section>
     </main>
   );
