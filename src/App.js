@@ -7,7 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const authCtxt = useContext(AuthContext);
-  console.log(authCtxt);
   return (
     <BrowserRouter>
       <Routes>

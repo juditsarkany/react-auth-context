@@ -77,13 +77,19 @@ const AuthForm = () => {
         <form className={styles.register} onSubmit={submitHandler}>
           <div className={styles.control}>
             <label htmlFor="email">Your Email</label>
-            <input type="email" id="email" ref={emailInputRef} />
+            <input
+              type="email"
+              id="email"
+              data-testid="email"
+              ref={emailInputRef}
+            />
           </div>
           <div className={styles.control}>
             <label htmlFor="password">Your Password</label>
             <input
               type="password"
               id="password"
+              data-testid="password"
               minLength="7"
               ref={passwordInputRef}
             />

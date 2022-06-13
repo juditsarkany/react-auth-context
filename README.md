@@ -8,6 +8,8 @@
 
 - Styling: CSS Modules
 
+- Testing: end-to-end style tests
+
 Using Google Firebase I connected this React web application with an authentication system, that requires an email and password field value.
 
 **Features:**
